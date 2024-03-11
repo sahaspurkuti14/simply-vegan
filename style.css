@@ -468,4 +468,15 @@ footer .social-icons i {
   .product-item {
     flex-direction: column;
   }
+
+  .container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  footer {
+    background-color: var(--green);
+    height: fit-content;
+    background-image: none;
+  }
 }
