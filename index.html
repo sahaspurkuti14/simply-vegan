@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/a6e7a95722.js"
+      crossorigin="anonymous"
+      defer=""
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -33,23 +38,152 @@
         </p>
       </div>
 
-      <div class="quotes flex flex-col md:flex-row justify-center items-center">
+      <div
+        class="quotes flex flex-col md:flex-row justify-center items-center relative"
+      >
         <div class="quote-item quote-1">
           Do yourself a favor,
           <span>eat healthy live longer</span>
         </div>
-
+        <img
+          class="quotes-connector"
+          src="./img/quotes-connector.svg"
+          alt="#"
+        />
         <div class="quote-item quote-2">
           Do yourself a favor,
           <span>eat healthy live longer</span>
         </div>
       </div>
 
-      <section class="our-products">
+      <section class="our-team relative">
+        <img class="our-team-bg" src="./img/team-bg.svg" alt="#" />
+        <div
+          class="flex flex-col md:flex-row items-start justify-between mb-20"
+        >
+          <div class="w-full md:w-2/4">
+            <h2>Our Team</h2>
+          </div>
+
+          <div class="w-full md:w-2/5 border-right">
+            <p>
+              Likeminded parents supported her in this mission to manufacture
+              healthy plant based food items. Our team includes parents, who
+              care about about their children’s diet
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row">
+          <div class="w-full md:w-2/5">
+            <p>
+              Simply Vegan Inc is female and minority-owned company started by a
+              Certified Food Scientist with over 30 years of experience in the
+              food industry
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="mission-vision flex flex-col md:flex-row gap-[20px] justify-center relative"
+      >
+        <img src="./img/mission-bg.svg" alt="#" class="mission-bg" />
+        <div class="mission">
+          <h3>Our Mission</h3>
+          <div class="para-block">
+            To produce tasty, affordable, healthy and simple plant based foods.
+          </div>
+        </div>
+
+        <div class="vision">
+          <h3>Our Vision</h3>
+          <div class="para-block">
+            To be a leading supplier of top-quality plant based healthy foods
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits relative">
+        <img src="./img/benefits-bg.svg" class="benefits-bg" alt="#" />
+        <h3>
+          Benefits of <br />
+          Plant Based Foods
+        </h3>
+        <div class="flex flex-col md:flex-row gap-[40px] justify-between">
+          <div class="w-full md:w-2/4">
+            <p>Vegan (Plant Based) foods provide:</p>
+            <ul class="list-style-disc">
+              <li>Plant Proteins</li>
+              <li>Antioxidants</li>
+              <li>Fiber</li>
+              <li>And many more phytochemicals</li>
+            </ul>
+          </div>
+
+          <div class="w-full md:w-2/5 flex justify-end">
+            <p>
+              Plant based foods are high in fiber and have no cholesterol where
+              as animal based foods contain cholesterol and no fiber. Thus,
+              plant based foods should be a part of all diets, not just vegan
+              ones.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ingredients">
+        <div class="flex flex-col md:flex-row gap-[40px] justify-between mb-10">
+          <div class="w-full md:w-2/4">
+            <div class="ingredient-img">
+              <img src="" alt="img" />
+            </div>
+          </div>
+          <div class="w-full md:w-2/5 flex justify-end">
+            <div>
+              <h3>Ingredients</h3>
+              <p>
+                Simply Vegan will prepare products with simple time tested
+                ingredients. We do not choose ingredients based on how hard or
+                easy it is to pronounce. We use ingredients that has been used
+                for years.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-[40px] justify-between">
+          <div class="w-full md:w-2/5">
+            <p>
+              <strong>For example,</strong> Asafetida is so hard to pronounce
+              but is a very beneficial ingredient used in eastern culture for
+              centuries in cooking especially beans. This is also used in
+              Ayurveda as medicine to release gas.
+            </p>
+          </div>
+          <div class="w-full md:w-2/4 flex justify-end">
+            <div class="ingredient-img">
+              <img src="" alt="img" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Simply Vegan will make...  -->
+      <section class="flex w-full justify-center">
+        <div class="simply-vegan-para">
+          <strong>Simply Vegan</strong> will make its products
+          <strong>affordable</strong> to a wide range market while maintaining
+          <strong>highest quality standards.</strong>
+        </div>
+      </section>
+
+      <section class="our-products relative">
+        <img src="./img/products-bg.svg" alt="#" class="products-bg" />
         <div class="product-item">
           <div class="w-full md:w-2/4">
             <h2>Our Products</h2>
-            <h3>Hot Seeductive Dates</h3>
+            <h4>Hot Seeductive Dates</h4>
             <ul>
               <li>Lesser than 7 ingredients used</li>
               <li>No sugar added</li>
@@ -75,7 +209,7 @@
             </div>
           </div>
           <div class="w-full md:w-2/5 text-right">
-            <h3>Nuts on Dates</h3>
+            <h4>Nuts on Dates</h4>
             <p>
               Simply Vegan will use healthy plant-based ingredients in its
               products such as Beans (Pea, Chickpea, lentils) and vegetables
@@ -103,7 +237,8 @@
           </div>
         </div>
 
-        <div class="flex justify-center items-center">
+        <!-- No added sugar  -->
+        <section class="flex justify-center items-center">
           <div class="no-sugar-text">
             <span>No Products</span>
             <br />
@@ -111,7 +246,7 @@
             <br />
             Added Sugar<span>.</span>
           </div>
-        </div>
+        </section>
 
         <div class="product-item">
           <div class="w-full md:w-2/4">
@@ -120,7 +255,7 @@
             </div>
           </div>
           <div class="w-full md:w-2/5 text-right">
-            <h3>Nuts on Dates</h3>
+            <h4>Nuts on Dates</h4>
             <p>
               We always try to include ingredients containing NMN (Nicotinamide
               Mononucleotide) which is considered to be an age reversal agent.
@@ -132,15 +267,15 @@
 
         <div class="product-item">
           <div class="w-full md:w-2/5">
-            <h3>Meal Deal</h3>
+            <h4>Meal Deal</h4>
             <p>Complete meal boxes with Cereal, Beans, & Vegetables</p>
 
-            <h4>Choice of Cereals/ Grains</h4>
+            <h5>Choice of Cereals/ Grains</h5>
             <ul class="custom-list-style">
               <li>Rice, Quinoa, Chia, Millets, Farina etc</li>
             </ul>
 
-            <h4>Vegetable Choices</h4>
+            <h5>Vegetable Choices</h5>
             <ul class="custom-list-style">
               <li>
                 Cauliflower, Cabbage, Mustard greens, Mushrooms,Asparagus,
@@ -148,7 +283,7 @@
               </li>
             </ul>
 
-            <h4>Beans Choices</h4>
+            <h5>Beans Choices</h5>
             <ul class="custom-list-style">
               <li>Pea, Chickpea, black eyed peas, Mung beans etc.</li>
             </ul>
@@ -160,35 +295,40 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="our-team">
-        <div
-          class="flex flex-col md:flex-row items-start justify-between mb-20"
-        >
-          <div class="w-full md:w-2/4">
-            <h2>Our Team</h2>
-          </div>
-
-          <div class="w-full md:w-2/5">
-            <p>
-              Likeminded parents supported her in this mission to manufacture
-              healthy plant based food items. Our team includes parents, who
-              care about about their children’s diet
-            </p>
-          </div>
-        </div>
-
-        <div class="flex flex-col md:flex-row">
-          <div class="w-full md:w-2/5">
-            <p>
-              Simply Vegan Inc is female and minority-owned company started by a
-              Certified Food Scientist with over 30 years of experience in the
-              food industry
-            </p>
-          </div>
-        </div>
+        <img
+          src="./img/products-bg-bottom.svg"
+          alt="#"
+          class="products-bg-bottom"
+        />
       </section>
     </div>
+
+    <footer>
+      <div class="flex justify-center items-end h-full">
+        <div class="container flex justify-between">
+          <div class="w-1/3 flex flex-col justify-between gap-[40px] h[400px]">
+            <div>
+              <h6>Contact</h6>
+              <span>615-429-4971</span>
+            </div>
+            <span class="text-xs">©2024 Simply Vegan Inc</span>
+          </div>
+
+          <div class="w-1/3 flex flex-col justify-between gap-[40px] h[400px]">
+            <div>
+              <h6>Follow Us</h6>
+              <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+            <a href="/privacy.html" class="text-xs"
+              >Terms of Service | Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
