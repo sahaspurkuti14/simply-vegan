@@ -125,6 +125,7 @@ header .navigation li {
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
+  padding-top: 0;
 }
 
 .story-title::before {
@@ -159,7 +160,7 @@ header .navigation li {
 }
 
 .quotes {
-  gap: 0px 160px;
+  max-width: 960px;
 }
 
 .quotes .quotes-connector {
@@ -291,7 +292,8 @@ header .navigation li {
   overflow: hidden;
 }
 
-.product-item .product-img img {
+.product-item .product-img img,
+.ingredient-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
