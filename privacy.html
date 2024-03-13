@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Vegan</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
     <link
@@ -24,9 +25,9 @@
         </a>
         <ul class="navigation">
           <li><a href="/">Home</a></li>
-          <li><a href="/privacy.html">About Us</a></li>
-          <li><a href="/privacy.html">Products</a></li>
-          <li><a href="/privacy.html">Contact</a></li>
+          <li><a href="/#about">About Us</a></li>
+          <li><a href="/#products">Products</a></li>
+          <li><a href="/#contact">Contact</a></li>
         </ul>
       </header>
 
@@ -37,7 +38,7 @@
         </div>
       </div>
     </div>
-    <footer class="relative flex items-end">
+    <footer id="contact" class="relative flex items-end">
       <img
         src="./img/footer-bg.svg"
         class="hidden md:block w-full object-contain relative bottom-0 left-0"
@@ -49,7 +50,12 @@
           <div class="w-1/3 flex flex-col justify-between gap-[40px] h[400px]">
             <div>
               <h6>Contact</h6>
-              <span>615-429-4971</span>
+              <div class="flex flex-col">
+                <a href="tel:615-429-4971">615-429-4971</a>
+                <a href="mailto:info@simplyveganinc.com"
+                  >info@simplyveganinc.com</a
+                >
+              </div>
             </div>
             <span class="text-xs">©2024 Simply Vegan Inc</span>
           </div>

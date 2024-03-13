@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Vegan</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
     <link
@@ -16,6 +17,11 @@
       defer=""
     ></script>
   </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
   <body>
     <div class="container">
       <header>
@@ -24,21 +30,60 @@
         </a>
         <ul class="navigation">
           <li><a href="/">Home</a></li>
-          <li><a href="/privacy.html">About Us</a></li>
-          <li><a href="/privacy.html">Products</a></li>
-          <li><a href="/privacy.html">Contact</a></li>
+          <li><a href="/#about">About Us</a></li>
+          <li><a href="/#products">Products</a></li>
+          <li><a href="/#contact">Contact</a></li>
         </ul>
       </header>
 
       <div class="banner">
-        <img src="./img/banner.png" alt="#" />
+        <img src="./img/banner.jpg" alt="#" />
       </div>
 
-      <section class="our-products relative mt-10 pt-20">
+      <section id="products" class="our-products relative mt-10 pt-20">
         <img src="./img/products-bg.svg" alt="#" class="products-bg" />
         <div class="product-item">
-          <div class="w-full md:w-2/5">
+          <div class="w-full md:w-2/4">
             <h2>Our Products</h2>
+            <h4>Seeds & Dates!</h4>
+            <p>
+              A very healthy Snack uniquely formulated using just seeds & dates.
+              This is free of all known food allergens, with no added sugar,
+              salt, or oil. Certainly, a very tempting option for parents
+              looking for a healthy and guilt free snack for their children. One
+              serving pack (1 0z), which is just 100 calories, offers 12% of
+              daily value fiber and zero added sugar.
+            </p>
+          </div>
+
+          <div class="w-full md:w-2/4 flex justify-end">
+            <div class="product-img">
+              <img src="./img/seeds-and-dates.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="w-full md:w-2/4">
+            <div class="product-img">
+              <img src="./img/seeductive-dates.png" />
+            </div>
+          </div>
+          <div class="w-full md:w-2/5 text-right">
+            <h4>Seeductive Dates!</h4>
+            <p>
+              A snack formulated with dates and seeds is free of all known food
+              allergens. It has no added sugar, salt, or oil. It comes in a
+              resealable 4 oz bag. A healthy product for anytime from breakfast
+              in the morning to dessert at night, on the go, or at work. A
+              perfect snack when you crave for some sweet but wish to avoid
+              unhealthy sugar added products.
+            </p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="w-full md:w-2/5">
             <h4>Hot Seeductive Dates!</h4>
             <p>
               If you are a hot person, enjoy this healthy snack made just with
@@ -48,7 +93,7 @@
 
           <div class="w-full md:w-2/4 flex justify-end">
             <div class="product-img">
-              <img src="./img/1a.jpeg" />
+              <img src="./img/hot-seeductive-dates.png" />
             </div>
           </div>
         </div>
@@ -56,7 +101,7 @@
         <div class="product-item">
           <div class="w-full md:w-2/4">
             <div class="product-img">
-              <img src="./img/2a.jpeg" />
+              <img src="./img/nuts-on-dates.png" />
             </div>
           </div>
           <div class="w-full md:w-2/5 text-right">
@@ -69,61 +114,49 @@
         </div>
 
         <div class="product-item">
-          <div class="w-full md:w-2/4">
-            <h4>Seeductive Dates!</h4>
+          <div class="w-full md:w-2/5">
+            <h4>Surreal Soup!</h4>
             <p>
-              A snack formulated with dates and seeds is free of all known food
-              allergens. It has no added sugar, salt, or oil. It comes in a
-              resealable 4 oz bag. A healthy product for anytime from breakfast
-              in the morning to dessert at night, on the go, or at work. A
-              perfect snack when you crave for some sweet but wish to avoid
-              unhealthy sugar added products.
+              As the name suggests, the soups are to be tried to believe. So
+              healthy yet so tasty.
             </p>
-            <img
-              class="product-img mt-10"
-              src="./img/seeductive-dates.jpg"
-              alt="#"
-            />
+            <p>
+              Simply Vegan uses healthy plant-based ingredients in its soup such
+              as Beans (Pea, Chickpea, lentils) and vegetables from crucifer
+              family (cabbage, cauliflower, broccoli, mustard greens),
+              asparagus, soy, garlic, ginger, turmeric.
+            </p>
+            <ul class="list-style-disc">
+              <li>Pea & Cauliflower soup</li>
+              <li>Chickpea & Broccoli Soup</li>
+              <li>Mung bean, Spinach & Mushroom Soup</li>
+              <li>Sprouted 5 beans soup</li>
+            </ul>
           </div>
 
           <div class="w-full md:w-2/4 flex justify-end">
             <div class="product-img">
-              <img src="./img/3a.jpeg" />
+              <img src="./img/surreal-soup.png" />
             </div>
           </div>
         </div>
 
-        <!-- No added sugar  -->
-        <section class="flex justify-center items-center mt-[95px]">
-          <div class="no-sugar-text">
-            <span>No Products</span>
-            <br />
-            will have
-            <br />
-            Added Sugar<span>.</span>
-          </div>
-        </section>
-
-        <!-- <div class="product-item">
+        <div class="product-item">
           <div class="w-full md:w-2/4">
             <div class="product-img">
-              <img src="./img/3a.jpeg" />
+              <img src="./img/hot-seeductive-dates.png" />
             </div>
           </div>
-          <div class="w-full md:w-2/5 text-right">
-            <h4>Seeds & Dates!</h4>
-            <p>
-              A very healthy Snack uniquely formulated using just seeds & dates.
-              This is free of all known food allergens, with no added sugar,
-              salt, or oil. Certainly, a very tempting option for parents
-              looking for a healthy and guilt free snack for their children. One
-              serving pack (1 0z), which is just 100 calories, offers 12% of
-              daily value fiber and zero added sugar.
+          <div class="w-full md:w-2/5 flex flex-col items-end">
+            <h4>Hot Seeductive Dates!</h4>
+            <p class="text-right">
+              If you are a hot person, enjoy this healthy snack made just with
+              seeds & dates with a kick of cayenne pepper.
             </p>
           </div>
-        </div> -->
+        </div>
 
-        <!-- <div class="product-item">
+        <div class="product-item">
           <div class="w-full md:w-2/5">
             <h4>Meal Deal</h4>
             <p>Complete meal boxes with Cereal, Beans, & Vegetables</p>
@@ -149,15 +182,26 @@
 
           <div class="w-full md:w-2/4 flex justify-end">
             <div class="product-img">
-              <img src="./img/3a.jpeg" />
+              <img src="./img/meal-deal.jpg" />
             </div>
           </div>
-        </div> -->
+        </div>
         <img
           src="./img/products-bg-bottom.svg"
           alt="#"
           class="products-bg-bottom"
         />
+      </section>
+
+      <!-- No added sugar  -->
+      <section class="flex justify-center items-center">
+        <div class="no-sugar-text">
+          <span>No Products</span>
+          <br />
+          will have
+          <br />
+          Added Sugar<span>.</span>
+        </div>
       </section>
 
       <div class="our-story">
@@ -168,23 +212,14 @@
         </p>
       </div>
 
-      <div class="quotes flex justify-end relative">
-        <!-- <div class="quote-item quote-1">
-          Do yourself a favor,
-          <span>eat healthy live longer</span>
-        </div>
-        <img
-          class="quotes-connector hidden md:block"
-          src="./img/quotes-connector.svg"
-          alt="#"
-        /> -->
-        <div class="quote-item quote-2">
+      <div class="quotes flex justify-center relative">
+        <div class="quote-item">
           Do yourself a favor,
           <span>eat healthy live longer</span>
         </div>
       </div>
 
-      <section class="our-team relative">
+      <section id="about" class="our-team relative">
         <img class="our-team-bg" src="./img/team-bg.svg" alt="#" />
         <div
           class="flex flex-col md:flex-row items-start justify-between mb-20"
@@ -264,7 +299,7 @@
         <div class="flex flex-col md:flex-row gap-[40px] justify-between mb-10">
           <div class="w-full md:w-2/4">
             <div class="ingredient-img">
-              <img src="./img/2b.jpeg" alt="img" />
+              <img src="./img/ingredient-1.jpg" alt="img" />
             </div>
           </div>
           <div class="w-full md:w-2/5 flex justify-end">
@@ -291,7 +326,7 @@
           </div>
           <div class="w-full md:w-2/4 flex justify-end">
             <div class="ingredient-img">
-              <img src="./img/1b.jpeg" alt="img" />
+              <img src="./img/ingredient-2.png" alt="img" />
             </div>
           </div>
         </div>
@@ -307,7 +342,7 @@
       </section>
     </div>
 
-    <footer class="relative flex items-end">
+    <footer id="contact" class="relative flex items-end">
       <img
         src="./img/footer-bg.svg"
         class="hidden md:block w-full object-contain relative bottom-0 left-0"
@@ -319,7 +354,12 @@
           <div class="w-1/3 flex flex-col justify-between gap-[40px] h[400px]">
             <div>
               <h6>Contact</h6>
-              <span>615-429-4971</span>
+              <div class="flex flex-col">
+                <a href="tel:615-429-4971">615-429-4971</a>
+                <a href="mailto:info@simplyveganinc.com"
+                  >info@simplyveganinc.com</a
+                >
+              </div>
             </div>
             <span class="text-xs">©2024 Simply Vegan Inc</span>
           </div>

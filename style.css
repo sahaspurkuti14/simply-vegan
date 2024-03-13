@@ -162,19 +162,9 @@ header .navigation li {
   margin-top: 5px;
 }
 
-.quotes {
-  max-width: 960px;
-}
-
-.quotes .quotes-connector {
-  position: absolute;
-  height: 50px;
-  z-index: -1;
-}
-
 .quotes .quote-item {
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -207,14 +197,7 @@ header .navigation li {
   font-size: 50px;
   color: #81cb74;
   z-index: 2;
-}
-
-.quotes .quote-item.quote-1::before {
-  top: 75px;
-}
-
-.quotes .quote-item.quote-2::before {
-  bottom: 75px;
+  bottom: 90px;
   transform: rotate(180deg);
 }
 
@@ -261,7 +244,7 @@ header .navigation li {
 
 .our-team-bg {
   position: absolute;
-  top: -155px;
+  top: -179px;
   right: -40px;
   z-index: -2;
 }
@@ -289,17 +272,12 @@ header .navigation li {
 .product-item .product-img,
 .ingredient-img {
   height: 350px;
-  width: 350px;
-  background-color: var(--lightgray);
-  border-radius: 15px;
-  overflow: hidden;
 }
 
 .product-item .product-img img,
 .ingredient-img img {
   height: 100%;
-  width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .product-item li {
