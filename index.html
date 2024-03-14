@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Vegan</title>
-    <link rel="icon" type="image/x-icon" href="./img/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
     <link
@@ -17,27 +17,31 @@
       defer=""
     ></script>
   </head>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
   <body>
     <div class="container">
       <header>
         <a href="/">
-          <img src="./img/logo.svg" alt="logo" class="brand-logo" />
+          <img src="./img/logo.png" alt="logo" class="brand-logo" />
         </a>
         <ul class="navigation">
           <li><a href="/">Home</a></li>
-          <li><a href="/#about">About Us</a></li>
+          <li>
+            <a href="/#about">About <span>Us</span></a>
+          </li>
           <li><a href="/#products">Products</a></li>
           <li><a href="/#contact">Contact</a></li>
         </ul>
       </header>
 
-      <div class="banner">
+      <div class="banner home-banner">
         <img src="./img/banner.jpg" alt="#" />
+      </div>
+
+      <!-- <section class="flex justify-center">
+        <img src="./img/tagline.png" class="h-[100px] object-contain" alt="#" />
+      </section> -->
+      <div class="tagline text-center">
+        Protein, Fiber, Antioxidants and more
       </div>
 
       <section id="products" class="our-products relative mt-10 pt-20">
@@ -58,7 +62,7 @@
 
           <div class="w-full md:w-2/4 flex justify-end">
             <div class="product-img">
-              <img src="./img/seeds-and-dates.png" />
+              <img src="./img/seeds-and-dates.png" alt="seeds and dates" />
             </div>
           </div>
         </div>
@@ -66,7 +70,7 @@
         <div class="product-item">
           <div class="w-full md:w-2/4">
             <div class="product-img">
-              <img src="./img/seeductive-dates.png" />
+              <img src="./img/seeductive-dates.png" alt="seeductive dates" />
             </div>
           </div>
           <div class="w-full md:w-2/5 text-right">
@@ -79,6 +83,10 @@
               perfect snack when you crave for some sweet but wish to avoid
               unhealthy sugar added products.
             </p>
+            <img
+              src="./img/seeductive-dates-bowl.png"
+              alt="seeductive dates bowl"
+            />
           </div>
         </div>
 
@@ -136,7 +144,7 @@
 
           <div class="w-full md:w-2/4 flex justify-end">
             <div class="product-img">
-              <img src="./img/surreal-soup.png" />
+              <img src="./img/surreal-soup.jpg" class="rounded-2xl" />
             </div>
           </div>
         </div>
@@ -144,46 +152,41 @@
         <div class="product-item">
           <div class="w-full md:w-2/4">
             <div class="product-img">
-              <img src="./img/hot-seeductive-dates.png" />
+              <img
+                src="./img/meal-deal.jpg"
+                class="rounded-2xl"
+                style="object-fit: cover"
+              />
             </div>
           </div>
-          <div class="w-full md:w-2/5 flex flex-col items-end">
-            <h4>Hot Seeductive Dates!</h4>
-            <p class="text-right">
-              If you are a hot person, enjoy this healthy snack made just with
-              seeds & dates with a kick of cayenne pepper.
-            </p>
-          </div>
-        </div>
-
-        <div class="product-item">
-          <div class="w-full md:w-2/5">
+          <div class="w-full md:w-2/5 flex flex-col items-end text-right">
             <h4>Meal Deal</h4>
             <p>Complete meal boxes with Cereal, Beans, & Vegetables</p>
 
             <h5>Choice of Cereals/ Grains</h5>
-            <ul class="custom-list-style">
-              <li>Rice, Quinoa, Chia, Millets, Farina etc</li>
-            </ul>
-
-            <h5>Vegetable Choices</h5>
-            <ul class="custom-list-style">
+            <ul>
               <li>
-                Cauliflower, Cabbage, Mustard greens, Mushrooms,Asparagus,
-                Kohlrabi, Mustard greens, Broccoli etc.
+                Rice, Quinoa, Chia, Millets, Farina etc with choice of
+                vegetables and a bean soup
               </li>
             </ul>
 
-            <h5>Beans Choices</h5>
-            <ul class="custom-list-style">
-              <li>Pea, Chickpea, black eyed peas, Mung beans etc.</li>
+            <h5>Choice of beans:</h5>
+            <ul>
+              <li>
+                Mung beans, Lentils, Black eye peas, Chickpeas, Peas, Soya, Tofu
+                etc.
+              </li>
             </ul>
-          </div>
 
-          <div class="w-full md:w-2/4 flex justify-end">
-            <div class="product-img">
-              <img src="./img/meal-deal.jpg" />
-            </div>
+            <h5>Vegetable Choices</h5>
+            <ul>
+              <li>
+                Cauliflower, Cabbage, Mustard greens, Mushrooms, Asparagus,
+                Kohlrabi, Mustard greens, Bok choy, Broccoli, Squash, Spinach
+                etc.
+              </li>
+            </ul>
           </div>
         </div>
         <img
@@ -194,13 +197,21 @@
       </section>
 
       <!-- No added sugar  -->
-      <section class="flex justify-center items-center">
+      <!-- <section class="flex justify-center items-center">
         <div class="no-sugar-text">
           <span>No Products</span>
           <br />
           will have
           <br />
           Added Sugar<span>.</span>
+        </div>
+      </section> -->
+
+      <section class="healthy-food flex flex-col items-center">
+        <img src="./img/ingredient-2.png" class="object-cover" />
+        <div class="healthy-text">
+          Healthy food <br /><span>improves</span><br />
+          your mood
         </div>
       </section>
 
@@ -230,9 +241,9 @@
 
           <div class="w-full md:w-2/5 border-right">
             <p>
-              Likeminded parents supported her in this mission to manufacture
-              healthy plant based food items. Our team includes parents, who
-              care about about their children’s diet
+              Simply Vegan Inc is female and minority-owned company started by a
+              Certified Food Scientist with over 30 years of experience in the
+              food industry
             </p>
           </div>
         </div>
@@ -240,9 +251,9 @@
         <div class="flex flex-col md:flex-row">
           <div class="w-full md:w-2/5">
             <p>
-              Simply Vegan Inc is female and minority-owned company started by a
-              Certified Food Scientist with over 30 years of experience in the
-              food industry
+              Likeminded parents supported her in this mission to manufacture
+              healthy plant based food items. Our team includes parents, who
+              care about about their children’s diet
             </p>
           </div>
         </div>
@@ -299,7 +310,7 @@
         <div class="flex flex-col md:flex-row gap-[40px] justify-between mb-10">
           <div class="w-full md:w-2/4">
             <div class="ingredient-img">
-              <img src="./img/ingredient-1.jpg" alt="img" />
+              <img src="./img/ingredient-1.jpg" alt="img" class="rounded-2xl" />
             </div>
           </div>
           <div class="w-full md:w-2/5 flex justify-end">
