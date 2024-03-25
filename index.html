@@ -34,21 +34,35 @@
       </header>
 
       <div class="banner home-banner">
-        <img src="./img/banner.jpg" alt="#" />
+        <img src="./img/banner.png" alt="#" />
       </div>
 
       <!-- <section class="flex justify-center">
         <img src="./img/tagline.png" class="h-[100px] object-contain" alt="#" />
       </section> -->
-      <div class="tagline text-center">
-        Protein, Fiber, Antioxidants and more
+      <!-- <h2 class="text-center w-full mt-4 slogan">Healthy Plant Based Foods</h2> -->
+      <div class="tagline text-center mt-4">
+        Plant Protein, Fiber, Antioxidants and more
       </div>
 
-      <section id="products" class="our-products relative mt-10 pt-20">
+      <section id="products" class="our-products relative pt-10">
         <img src="./img/products-bg.svg" alt="#" class="products-bg" />
+        <div class="product-item" style="justify-content: center">
+          <div
+            class="w-full md:w-2/4 flex justify-center flex-col items-center text-center"
+          >
+            <h2 class="our-products-title">Our Products</h2>
+            <h3>Baked Healthy Treats</h3>
+            <p>
+              All treats are made using healthy ingredients and focus on taste.
+              We broke all norms of regular baking such as adding lots of sugar,
+              oil/butter, salt, emulsifier etc. All our products are made in
+              very small batches in an FDA registered, SQF certified bakery.
+            </p>
+          </div>
+        </div>
         <div class="product-item">
           <div class="w-full md:w-2/4">
-            <h2>Our Products</h2>
             <h4>Seeds & Dates!</h4>
             <p>
               A very healthy Snack uniquely formulated using just seeds & dates.
@@ -60,7 +74,7 @@
             </p>
           </div>
 
-          <div class="w-full md:w-2/4 flex justify-end">
+          <div class="w-full md:w-2/4 h-full flex justify-end items-end">
             <div class="product-img">
               <img src="./img/seeds-and-dates.png" alt="seeds and dates" />
             </div>
@@ -70,11 +84,11 @@
         <div class="product-item">
           <div class="w-full md:w-2/4">
             <div class="product-img">
-              <img src="./img/seeductive-dates.png" alt="seeductive dates" />
+              <img src="./img/seeds-n-dates.png" alt="seeds n dates" />
             </div>
           </div>
           <div class="w-full md:w-2/5 text-right">
-            <h4>Seeductive Dates!</h4>
+            <h4>Seeds & Dates!</h4>
             <p>
               A snack formulated with dates and seeds is free of all known food
               allergens. It has no added sugar, salt, or oil. It comes in a
@@ -92,7 +106,7 @@
 
         <div class="product-item">
           <div class="w-full md:w-2/5">
-            <h4>Hot Seeductive Dates!</h4>
+            <h4>Hot Dates with Seeds!</h4>
             <p>
               If you are a hot person, enjoy this healthy snack made just with
               seeds & dates with a kick of cayenne pepper.
@@ -101,7 +115,7 @@
 
           <div class="w-full md:w-2/4 flex justify-end">
             <div class="product-img">
-              <img src="./img/hot-seeductive-dates.png" />
+              <img src="./img/hot-dates-with-seeds.png" />
             </div>
           </div>
         </div>
@@ -112,16 +126,22 @@
               <img src="./img/nuts-on-dates.png" />
             </div>
           </div>
-          <div class="w-full md:w-2/5 text-right">
+          <div class="w-full md:w-2/5 text-right flex flex-col">
             <h4>Nuts on Dates!</h4>
             <p>
               Healthy snack formulated for Nut lovers, using dates, Nuts and
               Chia seeds. Try it and get a unique feel of having Nuts on Dates!
             </p>
+            <img
+              src="./img/open-nuts-on-dates.png"
+              alt="seeductive dates bowl"
+              class="max-h-[150px] mt-4 self-center"
+            />
           </div>
         </div>
 
-        <div class="product-item">
+        <div class="product-item section-break">
+          <img src="./img/surreal-bg.svg" alt="#" class="surreal-bg" />
           <div class="w-full md:w-2/5">
             <h4>Surreal Soup!</h4>
             <p>
@@ -149,7 +169,7 @@
           </div>
         </div>
 
-        <div class="product-item">
+        <div class="product-item section-break" style="margin-bottom: 0">
           <div class="w-full md:w-2/4">
             <div class="product-img">
               <img
@@ -208,7 +228,7 @@
       </section> -->
 
       <section class="healthy-food flex flex-col items-center">
-        <img src="./img/ingredient-2.png" class="object-cover" />
+        <img src="./img/ingredient-body.png" class="object-cover" />
         <div class="healthy-text">
           Healthy food <br /><span>improves</span><br />
           your mood
@@ -260,7 +280,7 @@
       </section>
 
       <section
-        class="mission-vision flex flex-col md:flex-row gap-[20px] justify-center relative mt-20"
+        class="mission-vision flex flex-col md:flex-row gap-[20px] justify-center relative"
       >
         <img src="./img/mission-bg.svg" alt="#" class="mission-bg" />
         <div class="mission">
@@ -278,7 +298,7 @@
         </div>
       </section>
 
-      <section class="benefits relative mt-20">
+      <section class="benefits relative mt-10">
         <img src="./img/benefits-bg.svg" class="benefits-bg" alt="#" />
         <h3>
           Benefits of <br />
@@ -306,7 +326,7 @@
         </div>
       </section>
 
-      <section class="ingredients mt-40">
+      <section class="ingredients mt-10">
         <div class="flex flex-col md:flex-row gap-[40px] justify-between mb-10">
           <div class="w-full md:w-2/4">
             <div class="ingredient-img">
@@ -322,11 +342,17 @@
                 easy it is to pronounce. We use ingredients that has been used
                 for years.
               </p>
+              <p>
+                <strong>For example,</strong> Asafetida is so hard to pronounce
+                but is a very beneficial ingredient used in eastern culture for
+                centuries in cooking especially beans. This is also used in
+                Ayurveda as medicine to release gas.
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-col md:flex-row gap-[40px] justify-between">
+        <!-- <div class="flex flex-col md:flex-row gap-[40px] justify-between">
           <div class="w-full md:w-2/5">
             <p>
               <strong>For example,</strong> Asafetida is so hard to pronounce
@@ -340,7 +366,7 @@
               <img src="./img/ingredient-2.png" alt="img" />
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <!-- Simply Vegan will make...  -->
